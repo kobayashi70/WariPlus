@@ -30,7 +30,7 @@ function ExpenseForm({
         />
         
       </label>
-      <button  type="button" onClick={calculateSplit}>
+      <button  className="keisan" type="button" onClick={calculateSplit}>
         計算
       </button>
     </div>

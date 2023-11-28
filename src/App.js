@@ -31,11 +31,14 @@ const App = () => {
   return (
     <Router>
       <div>
-        <h1>WariPlus</h1>
-        <div>
-          <button onClick={handleCreateAccount}>アカウント作成</button>
-          <button onClick={handleLogin}>ログイン</button>
-        </div>
+        <header id="header">
+          <h1>WariPlus</h1>
+          <div className="header-item">
+            <button onClick={handleCreateAccount}>アカウント作成</button>
+            <button onClick={handleLogin}>ログイン</button>
+          </div>
+        </header>
+        <Dashboard />
 
         <Routes>
           <Route path="/dashboard" element={<Dashboard user={user} />} />

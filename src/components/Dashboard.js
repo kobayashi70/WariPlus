@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h2>ユーザーダッシュボード</h2>
+      <h2>データ入力欄</h2>
 
       <ExpenseForm
         totalAmount={totalAmount}
