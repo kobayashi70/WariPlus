@@ -34,6 +34,7 @@ const SignIn = ({ setUser }) => {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       // ログイン成功時の処理
+      console.log(result);
       console.log("Googleログイン成功:", user.displayName);
       setUser({ email });
       navigate("/dashboard");
@@ -46,7 +47,7 @@ const SignIn = ({ setUser }) => {
   };
 
   return (
-    <div>
+    <div className="sign-wrap">
       <h2>ログイン</h2>
       <label>
         メールアドレス:
